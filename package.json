@@ -1,0 +1,38 @@
+{
+  "name": "web-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.prod.js",
+    "dev": "webpack serve --open --config webpack.dev.js",
+    "deploy": "git add dist -f && git commit -m 'Deployment commit' && git subtree push --prefix dist origin gh-pages"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Use the GitHub 'Use this template' button to create new projects",
+  "dependencies": {
+    "modern-normalize": "^3.0.1",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.5",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.8",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.111.1",
+    "webpack-cli": "^7.2.3",
+    "webpack-dev-server": "^6.0.0",
+    "webpack-merge": "^6.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sambaramba/Web-starter-template.git"
+  },
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Sambaramba/Web-starter-template/issues"
+  },
+  "homepage": "https://github.com/Sambaramba/Web-starter-template#readme"
+}
